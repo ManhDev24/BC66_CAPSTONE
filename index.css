@@ -1,208 +1,114 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Quicksand", sans-serif;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
-
-/* Start Header */
-
-.search__icon {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-}
-
-.w3menu-right-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-}
-.logo-brand {
-    font-weight: 700;
-}
-.search {
-    position: relative;
-}
-
-.search__icon {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    font-size: 15px;
-}
-
-.form-control {
-    display: flex;
-    flex: 1;
-    padding: 10px 50px 10px 20px;
-    height: 45px;
-    font-size: 16px;
-    color: white;
-    border: none;
-    font-weight: 400;
-    border-radius: 6px;
-    position: relative;
-    right: 0;
-    background: white;
-    outline: 0;
-    border: 1px solid white;
-    width: 230px;
-}
-.form-control.dark-mode {
-    display: flex;
-    flex: 1;
-    padding: 10px 50px 10px 20px;
-    height: 45px;
-    font-size: 16px;
-    color: #c2d0da;
-    border: none;
-    font-weight: 400;
-    border-radius: 6px;
-    position: relative;
-    right: 0;
-    background: #232220;
-    outline: 0;
-    border: 1px solid #232220;
-}
- .form-control.dark-mode::placeholder {
-    color: #e3e3e3; /* Màu placeholder trong chế độ tối */
-}
-
-.search__icon.dark-mode {
-    color: #8796a5;
-}
-.w3_menu {
-    cursor: pointer;
-}
-/* Start banner */
-.dinner-banner {
-    background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(./img/banner1.jpg);
-}
-
-.dinner-banner {
-    background-size: cover;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: initial;
-    background-attachment: fixed;
-    height: 60vh;
-    position: relative;
-    min-height: 700px;
-}
-.banner-row {
-    height: 100%;
-}
-.banner_content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.banner_info {
-    max-width: 600px;
-}
-.dinner-banner .banner_info h3 {
-    font-size: 56px;
-    line-height: 64px;
-    text-transform: capitalize;
-    font-weight: 600;
-}
-.dinner-banner .banner_info p {
-    font-size: 18px;
-    line-height: 28px;
-}
-.banner_button {
-    transition: 0.3s;
-}
-.banner_button:hover {
-    color: #ff6600;
-}
-
-/* Start dinner content */
-
-.title-subhny {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 1px;
-    color: #ff6600;
-    display: block;
-    font-family: "Pacifico", cursive;
-}
-.title-w3l {
-    font-size: 40px;
-    line-height: 48px;
-    font-weight: 600;
-}
-
-.dinner-content.dark-mode {
-    background: #232220;
-    color: #c2d0da;
-}
-.dark-mode .dinner-content h3 {
-    color: white;
-}
-
-/* Start food desc */
-.food-description {
-    background: #ff6600;
-}
-.dinner-block-image {
-    background-image: url(./img/banner3.jpg);
+/* homepage_cover */
+.homepage_cover {
+    background: url(../img/banner2.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-background-size: cover;
-}
-.dinner-block-image::after {
-    content: "";
-    background: rgb(16 15 19 / 46%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-height: 100%;
-    z-index: -1;
-}
-.dinner-block-image {
+    background-size: cover;
     position: relative;
     z-index: 1;
-    min-height: 600px;
-}
-.food-description p {
-    color: #ffdfc9;
-}
-.icon {
-    width: 70px;
-    height: 70px;
-    text-align: center;
-    background: rgb(130 115 252 / 5%);
-    line-height: 70px;
-    border-radius: 6px;
-    transition: 0.5s ease-in-out;
-}
-.icon span.fa {
-    color: #ff6600;
-    font-size: 25px;
-    line-height: 70px;
-}
-.subscribe-cat {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-}
-.subscribe-cat-gd .icon {
-    background: white;
-}
-.subscribe-cat-gd:hover .icon .fa {
-    color: #cccf14;
-    transition: color 0.5s;
+
 }
 
-.subscribe-cat-gd .subscribe-cat-link {
-    text-decoration: none;
-    display: block;
-    color: #232121;
+.homepage_cover:before {
+    content: "";
+    background: rgb(16 15 19 / 66%);
+    position: absolute;
+    top: 0px;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.homepage_cover_content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.homepage_cover_content h3 {
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 600;
+    color: #fff;
+    max-width: 800px;
+}
+
+.homepage_cover .homepage_cover_re {
+    padding: 12px 45px;
+    font-size: 16px;
+    line-height: 30px;
     font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 15px;
-    font-size: 20px;
+    border-radius: 7px;
+    color: white;
+    background-color: none;
+    cursor: pointer;
+    transition: 1s;
+    border: 2px solid white;
+}
+
+.homepage_cover .homepage_cover_re:hover {
+    background-color: white;
+    color: #ff6600;
+}
+
+.homepage_cover .homepage_cover_con {
+    padding: 12px 45px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    border-radius: 7px;
+    background-color: #ff6600;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    border: 2px solid #ff6600;
+}
+
+.homepage_cover .homepage_cover_con:hover {
+    opacity: 0.7;
+    background-color: #ff6600;
+}
+
+/* Number */
+
+.number {
+    position: relative;
+    margin-top: -80px;
+    z-index: 2;
+}
+
+.number .number_item i {
+    color: white;
+    background-color: #ff6600;
+    font-size: 26px;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    line-height: 68px;
+}
+
+.number .counter-item {
+    background-color: white;
+    box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+    padding: 40px 20px;
+    border-radius: 6px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.number .number_list .counter-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.number .counter-item h3 {
+    font-size: 42px;
+    color: #232121;
 }

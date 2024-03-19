@@ -1,219 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS v5.2.1 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diner</title>
+
+    <!-- GG Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <!-- my css-->
-    <link rel="stylesheet" href="./index.css" />
-  </head>
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
 
-  <body>
-    <header class="position-absolute top-0 w-100 z-1 start-0 pt-4">
-      <div class="container">
-        <div class="row">
-          <div class="w3_hnyits_logo col-sm-12 col-lg-8">
-            <h1>
-              <a class="logo-brand text-decoration-none text-white" href="#"
-                >Diner
-              </a>
-            </h1>
-          </div>
-          <div class="w3menu-right-content col-sm-12 col-lg-4">
-            <!--/search-right-->
-            <div class="search-bar HeaderSearch">
-              <!--/search-right-->
-              <form action="" method="GET" class="search position-relative">
-                <input
-                  class="dark me-2 position-relative form-control"
-                  type="search"
-                  placeholder="Search here"
-                  aria-label="Search"
-                  id="navbar-input"
-                />
-                <span class="fa fa-search search__icon"></span>
-              </form>
-              <!--//search-right-->
-            </div>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+</head>
 
-            <div class="w3_menu text-center fs-2 text-white">
-              <i id="dark-m" class="fa-solid fa-moon" onclick="darkMode()"></i>
-            </div>
-
-            <div class="mobile-nav-button text-center">
-              <button
-                class="navbar btn fs-3 border-0 text-white"
-                type="button"
-                data-bs-toggle="collapse"
-              >
-                <span class="navbar-icon">
-                  <i class="fa fa-bars"></i>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <section class="dinner-banner">
-      <div class="row banner-row mx-0">
-        <div class="banner_content">
-          <div class="container">
-            <div class="banner_info">
-              <h3 class="mb-4 text-white">
-                The only thing we love more than food is you!
-              </h3>
-              <p class="pr-lg-5 mt-md-4 mt-3 text-white">
-                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
-                vitae sit.Ea ipsum sed consequuntur illum facere.
-              </p>
-              <button
-                class="btn btn-outline-light mt-sm-5 mt-4 mr-2 banner_button px-5 py-3 fw-bolder"
-                href="#url"
-              >
-                Read More &nbsp;
-                <span class="fa fa-chevron-right" aria-hidden="true"></span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="dinner-content" class="py-5 py-sm-5 py-md-5 dinner-content">
-      <div class="container py-md-5 text-start">
-        <div class="row">
-          <div class="col-md-12 col-lg-5 content-1-left pe-5">
-            <div class="header-title">
-              <h6 class="title-subhny">About Us</h6>
-              <h3 class="title-w3l mb-4">
-                We found our creative space that is open for you.
-              </h3>
-            </div>
-          </div>
-          <div
-            class="col-md-12 col-lg-7 content-1-right pl-lg-5 mt-lg-0 mt-3 text-start px-5"
-          >
-            <p class="">
-              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-              ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
-              amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
-              Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit,
-              culpa!Lorem ipsum init dolor sit.
-            </p>
-            <p class="mt-3">
-              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-              ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
-              amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="food-description">
-      <div class="container-fluid px-lg-0">
-        <div class="row align-items-center no-gutters mx-0">
-          <div class="col-md-12 col-lg-6 px-lg-0 pt-lg-0 pt-5">
-            <div class="dinner-block-image"></div>
-          </div>
-          <div class="col-md-12 col-lg-6 px-lg-4 py-lg-3 py-4 HomePageFWP">
-            <div class="agent-block-image-inf p-md-5 p-3">
-              <h6 class="title-subhny two text-white">
-                More than 3000 Restaurants
-              </h6>
-
-              <h3 class="title-w3l two">
-                Book a table easly at the best price
-              </h3>
-
-              <p class="my-3">
-                Vestibulum ante ipsum primis in faucibus orci luctus turpis
-                sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam
-                tesque et libero ut justo ultrices in.
-              </p>
-
-              <div class="subscribe-cat mt-5">
-                <div class="subscribe-cat-gd">
-                  <div class="icon mb-4">
-                    <span class="fa fa-thumbs-up"></span>
-                  </div>
-                  <a href="#url" class="subscribe-cat-link">Best Deals</a>
-                  <p class="mt-2">
-                    Lorem ipsum viverra feugiat. Pellen tesque libero justo.
-                  </p>
+<body>
+    
+    <!-- homepage_cover -->
+    <section class="homepage_cover py-5">
+        <div class="container pt-lg-2 pb-lg-4 py-4">
+            <div class="homepage_cover_content text-center py-lg-5">
+                <h3 class="title text-center text-white py-5">Deliciousness jumping into the mouth.</h3>
+                <div class="pb-lg-5">
+                    <button class="btn mt-3 me-3 homepage_cover_re ">Read More &nbsp;
+                        <span class="fa fa-angle-right"></span></button>
+                    <button class="btn mt-3 homepage_cover_con ">Contact Us &nbsp;
+                        <span class="fa fa-angle-right"></span></button>
                 </div>
-
-                <div class="subscribe-cat-gd">
-                  <div class="icon mb-4">
-                    <span class="fa fa-cutlery"></span>
-                  </div>
-                  <a href="#url" class="subscribe-cat-link">Best Food</a>
-                  <p class="mt-2">
-                    Lorem ipsum viverra feugiat. Pellen tesque libero justo.
-                  </p>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
-    <section class="dinner-category"></section>
-    <section class="homepage-service"></section>
-    <section class="homepage-cover"></section>
-    <section class="homepage-video"></section>
-    <section class="dinner-blog"></section>
-    <section class="dinner-agency"></section>
 
-    <footer>
-      <!-- place footer here -->
-      <section class="footer"></section>
-      <section class="copyright"></section>
-    </footer>
+    <!-- number -->
+    <section class="number py-md-5 py-lg-0">
+        <div class="container pe-5 ps-5">
+            <div class="row number_list justify-content-center">
+                <div class="col-md-3 col-6 mt-md-0 mt-4">
+                    <div class="counter-item">
+                        <div class=" number_item text-center">
+                            <i class="fa fa-building"></i>
+                            <h3 class="counter fw-semibold pt-3">15,100</h3>
+                            <p class="text-muted fs-5 fw-semibold">Branches</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-6 mt-md-0 mt-4">
+                    <div class="counter-item">
+                        <div class="number_item text-center">
+                            <i class="fa-solid fa-utensils"></i>
+                            <h3 class="counter fw-semibold pt-3">19,256</h3>
+                            <p class="text-muted fs-5 fw-semibold">Food Items</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mt-md-0 mt-4">
+                    <div class="counter-item">
+                        <div class="number_item text-center">
+                            <i class="fa fa-users"></i>
+                            <h3 class="counter fw-semibold pt-3">12,100</h3>
+                            <p class="text-muted fs-5 fw-semibold">Chefs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mt-md-0 mt-4">
+                    <div class="counter-item">
+                        <div class="number_item text-center">
+                            <i class="fa fa-smile"></i>
+                            <h3 class="counter fw-semibold pt-3">2,560</h3>
+                            <p class="text-muted fs-5 fw-semibold">Happy Customers</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- Counter -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+    
+</body>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-    <!-- js script -->
-    <script src="./index.js"></script>
-  </body>
 </html>
